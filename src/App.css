@@ -1,38 +1,268 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.App-main {
+  padding: 20px;
+}
+
+.main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  padding: 20px;
+}
+
+.main-picture {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.main-content {
+  margin-top: 20px;
+  max-width: 800px;
+}
+
+.main-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block; 
 }
 
-.App-link {
-  color: #61dafb;
+form button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  color: #4CAF50;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #33b137;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 10px 0;
+  list-style-type: none;
+  background-color: #53ab56;
+  border-radius: 8px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+nav ul li a:hover {
+  background-color: #45a049;
+}
+
+/* Стилі для форм */
+.form-container {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.product-fields {
+  margin-bottom: 10px;
+}
+
+.form-buttons {
+  /* Стили для кнопок */
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons button {
+  width: 48%;
+}
+
+.list-container {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-container ul {
+  padding: 0;
+  margin: 0;
+}
+
+.list-container li {
+  background: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-item {
+  margin-bottom: 20px;
+}
+
+.order-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.order-btn:hover {
+  background-color: #45a049;
+}
+
+.item-list {
+  padding: 20px;
+}
+
+.item-collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.item-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.item-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-details {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
 }
